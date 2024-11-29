@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    background-color: #ec008c;
+    background-image: linear-gradient(43deg, #ec008c 0%, #fc6767 46%, #FFCC70 100%);
+ }
+
+.back-btn svg {
+    height: 2rem;
+    width: 3rem;
+    fill: black;     
+}
+
+.form-label {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.btn {
+    background-color: #fcc765;
+    color: black;
+    border-color: #fcc765;
+}
+
+.btn:hover {
+    background-color: #f0cc82;
+    color: black;
+    border-color: #141415;
+}
+
+textarea {
+    width: 100%;  /* Make textarea full width */
+    height: 150px;  /* Set the height */
+    resize: vertical;  /* Allow only vertical resizing */
+    overflow: auto;  /* Allow overflow if content exceeds */
+    white-space: pre-wrap; /* Allow the text to wrap and preserve spaces and line breaks */
+}

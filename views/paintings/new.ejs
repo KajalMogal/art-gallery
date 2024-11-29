@@ -1,0 +1,57 @@
+<% layout('layouts/boilerplate') %>
+<link rel="stylesheet" href="/stylesheets/new.css">
+    <h1 class="text-center"></h1>
+    <form action="/paintings" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+       <div class="row">
+        <div class="col-6 offset-3">
+            
+            <div class="mb-3">
+                <label class="form-label" for="title">Painting Name</label>
+                <input class="form-control" type="text" id="title" name="painting[title]" placeholder="name of your painting">
+                <div class="valid-feedback">
+                    good!
+                  </div>
+            </div>
+        
+            <input type="file" name="image" id="" multiple> 
+
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="painting[description]" placeholder="type text..."></textarea>
+                <div class="valid-feedback">
+                    good!
+                  </div>
+            </div>
+    
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Add</button>
+            </div>
+        </div>
+       </div>
+    </form>
+
+    <div>
+        <a href="/paintings"></a>
+    </div>
+
+  
+
+       
+<script>
+    (() => {
+'use strict'
+
+const forms = document.querySelectorAll('.needs-validation')
+
+Array.from(forms).forEach(form => {
+form.addEventListener('submit', event => {
+if (!form.checkValidity()) {
+event.preventDefault()
+event.stopPropagation()
+}
+
+form.classList.add('was-validated')
+}, false)
+})
+})()
+</script>
