@@ -1,6 +1,9 @@
 # Art Gallery
 
-A fullstack express app, where user can add painting and other users can see and comment on it. Hashing is used to store users password in database.
+Art Gallery a fullstack express app, where user can add painting and other users can see and comment on it. Hashing is used to store users password in database.
+
+![art](https://github.com/user-attachments/assets/6130730d-92f7-4738-9a55-96298a0572ba)
+
 
 ## Tech Stack
 - `Node.js` : Javascript runtime for building the app server.
