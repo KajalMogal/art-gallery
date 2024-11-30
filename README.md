@@ -1,6 +1,6 @@
 # Art Gallery
 
-Art Gallery a fullstack express app, where user can add painting and other users can see and comment on it. Hashing is used to store users password in database.
+Art Gallery, a fullstack Express application where users can upload their paintings to share with others. Other users can view the paintings and leave comments on them, created an interactive platform for art sharing and feedback.Hashing is used to store users password in database.
 
 ![art](https://github.com/user-attachments/assets/6130730d-92f7-4738-9a55-96298a0572ba)
 
